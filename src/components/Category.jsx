@@ -27,7 +27,7 @@ function Category() {
   
   return (
     <div className="w-full xl:max-w-[1200px] mx-auto p-[10px] xl:p-0">
-      <div className="flex flex-col xl:flex my-3 items-center xl:justify-between">
+      <div className="flex flex-col lg:flex-row my-3 items-center lg:justify-between text-center lg:text-left">
         <div className="text-[25px] font-bold xl:mb-0 mb-2">What's on your mind?</div>
         <div className="flex ">
           <div onClick={prevSlide} className="cursor-pointer flex justify-center items-center bg-[#e2e2e7] rounded-full w-[30px] h-[30px] mx-2">

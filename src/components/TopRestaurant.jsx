@@ -28,7 +28,7 @@ const TopRestaurant = () => {
 
   return (
     <div className="w-full xl:max-w-[1200px] mx-auto p-[10px] xl:p-0">
-      <div className="flex flex-col xl:flex my-3 items-center xl:justify-between">
+      <div className="flex flex-col my-3 items-center lg:items-start lg:flex-row lg:justify-between">
         <div className="text-[25px] font-bold xl:mb-0 mb-2">
           Top restaurant chains in Delhi
         </div>
