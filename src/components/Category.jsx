@@ -21,9 +21,9 @@ function Category() {
     
   }
 
-  // const apiData = useFetch();
+  const apiData = useFetch();
 
-  // const categories = apiData.cards?.[0]?.card?.card?.imageGridCards?.info || [] ;
+  const categories = apiData.cards?.[0]?.card?.card?.imageGridCards?.info || [] ;
   
   return (
     <div className="w-full xl:max-w-[1200px] mx-auto p-[10px] xl:p-0">
@@ -40,7 +40,7 @@ function Category() {
       </div>
       <div className="flex overflow-hidden">
 
-        {category.map((cat, index) => {
+        {categories.map((cat, index) => {
           return (
             <div style={{
               transform: `translateX(-${slide * 100}%)`

@@ -15,16 +15,16 @@ const TopRestaurant = () => {
     setSlide(slide - 3);
   }
   const nextSlide = () => {
-    if (resList.length - 8 == slide) {
+    if (restaurants.length - 8 == slide) {
       return false;
     }
     setSlide(slide + 3);
     
   }
   
-  // const apiData = useFetch();
+  const apiData = useFetch();
 
-  // const restaurants = apiData.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+  const restaurants = apiData.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
 
   return (
     <div className="w-full xl:max-w-[1200px] mx-auto p-[10px] xl:p-0">
@@ -44,7 +44,7 @@ const TopRestaurant = () => {
 
       <div className="flex gap-3 overflow-hidden" >
         {
-            resList.map((restaurant,i)=>{
+            restaurants.map((restaurant,i)=>{
               return (
                 <div style={{
                   transform: `translateX(-${slide * 100}%)`

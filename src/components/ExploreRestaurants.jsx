@@ -4,9 +4,9 @@ import { exploreRes } from "../utils/exploreRestaurants";
 
 function ExploreRestaurants() {
 
-  // const apiData = useFetch();
+  const apiData = useFetch();
 
-  // const brands = apiData.cards?.[8]?.card?.card?.brands || [];
+  const brands = apiData.cards?.[8]?.card?.card?.brands || [];
 
 
   return (
@@ -17,7 +17,7 @@ function ExploreRestaurants() {
 
       <div className="grid grid-cols-2 gap-3 mt-5 text-center">
         { 
-          exploreRes.map((brand , i)=>{
+          brands.map((brand , i)=>{
             return <Block {...brand} key={i}/>
           })
         }

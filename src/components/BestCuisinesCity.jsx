@@ -4,9 +4,9 @@ import { brands } from "../utils/bestCuisinesCity";
 
 function BestCuisinesCity() {
 
-  // const apiData = useFetch();
+  const apiData = useFetch();
 
-  // const brands = apiData.cards?.[6]?.card?.card?.brands || [];
+  const brands = apiData.cards?.[6]?.card?.card?.brands || [];
 
 
   return (
