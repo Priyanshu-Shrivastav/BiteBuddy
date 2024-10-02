@@ -6,6 +6,7 @@ import { IoMdHelpCircleOutline } from "react-icons/io";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import logo from "../assets/BiteBuddy1.png";
 
 
 function Header() {
@@ -65,10 +66,10 @@ function Header() {
       </div>
       <header className="p-[15px] shadow-xl text-[#3d4152] sticky top-0 z-[9999] bg-white">
         <div className=" max-w-[1200px] mx-auto flex items-center">
-          <div className="w-[100px]">
-            <img src="images/logo.png" className="w-full" alt="" />
+          <div className="w-[200px]">
+            <img src={logo} className="w-full" alt="" />
           </div>
-          <div className="relative">
+          {/* <div className="relative">
             <span className="font-bold border-b-[3px] border-[black]">
               Ankleshwar
             </span>{" "}
@@ -78,7 +79,7 @@ function Header() {
               className="inline text-[#fc8019] font-bold cursor-pointer"
               onClick={showToggleMenu}
             />
-          </div>
+          </div> */}
           <nav className="hidden list-none md:flex gap-2 lg:gap-8 font-semibold ml-auto text-[16px]" >
             
 

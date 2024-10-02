@@ -1,3 +1,6 @@
+import appStore from "../assets/app_store.png";
+import playStore from "../assets/play_store.png";
+
 function Download() {
   return (
     <div className="w-full bg-[#F0F0F5] max-h-none xl:max-h-[136px] mt-[80px] ">
@@ -9,14 +12,14 @@ function Download() {
           <div className="">
             <img
               className="w-[208px]"
-              src="../../public/images/app_store.png"
+              src={appStore}
               alt="app_store"
             />
           </div>
           <div className="">
             <img
               className="w-[208px]"
-              src="../../public/images/play_store.png"
+              src={playStore}
               alt="play_store"
             />
           </div>
