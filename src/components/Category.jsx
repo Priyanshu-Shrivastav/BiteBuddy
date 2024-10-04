@@ -14,16 +14,16 @@ function Category() {
     setSlide(slide - 3);
   }
   const nextSlide = () => {
-    if (categories.length - 8 == slide) {
+    if (category.length - 8 == slide) {
       return false;
     }
     setSlide(slide + 3);
     
   }
 
-  const apiData = useFetch();
+  // const apiData = useFetch();
 
-  const categories = apiData.cards?.[0]?.card?.card?.imageGridCards?.info || [] ;
+  // const categories = apiData.cards?.[0]?.card?.card?.imageGridCards?.info || [] ;
   
   return (
     <div className="w-full xl:max-w-[1200px] mx-auto p-[10px] xl:p-0">
@@ -40,7 +40,7 @@ function Category() {
       </div>
       <div className="flex overflow-hidden">
 
-        {categories.map((cat, index) => {
+        {category.map((cat, index) => {
           return (
             <div style={{
               transform: `translateX(-${slide * 100}%)`

@@ -6,10 +6,10 @@ import { resList } from "../utils/resList";
 
 function AllCards() {
     
-  const apiData = useFetch();
+  // const apiData = useFetch();
   const onlineStatus = useOnlineStatus();
 
-  const restaurants = apiData.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+  // const restaurants = apiData.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
 
   if (onlineStatus === false) {
     return <h1>you are offline . please check your connection!!</h1>
@@ -27,7 +27,7 @@ function AllCards() {
         <div className="flex flex-col my-3 items-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
               {
-                  restaurants.map((restaurant , i)=>{
+                  resList.map((restaurant , i)=>{
                       return <Card {...restaurant.info} key={i} />;
                   })
               }

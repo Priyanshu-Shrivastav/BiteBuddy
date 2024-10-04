@@ -4,9 +4,9 @@ import { brandsNearMe } from "../utils/bestCuisinesNearMe"
 
 function BestCuisinesNearMe() {
 
-  const apiData = useFetch();
+  // const apiData = useFetch();
 
-  const brands = apiData.cards?.[7]?.card?.card?.brands || [];
+  // const brands = apiData.cards?.[7]?.card?.card?.brands || [];
 
 
   return (
@@ -17,7 +17,7 @@ function BestCuisinesNearMe() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-5">
         { 
-          brands.map((brand , i)=>{
+          brandsNearMe.map((brand , i)=>{
             return <Block {...brand} key={i}/>
           })
         }
